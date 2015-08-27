@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "JavaScriptCore.framework"
+  s.framework  = "JavaScriptCore"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   s.library   = "libz.dylib"
