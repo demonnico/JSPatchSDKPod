@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   s.framework  = "JavaScriptCore"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  s.library   = "libz.dylib"
+  s.library   = "libz"
   # s.libraries = "iconv", "xml2"
 
 
