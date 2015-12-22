@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JSPatchSDKPod"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of JSPatchSDKPod."
+  s.version      = "0.1.5"
+  s.summary      = "JSPatch SDK Pod."
 
   s.description  = <<-DESC
                    A longer description of JSPatchSDKPod in Markdown format.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/JSPatchSDKPod"
+  s.homepage     = "https://github.com/demonnico/JSPatchSDKPod"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,9 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  #s.license      = "MIT "
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :text => "" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,10 +54,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Nicholas Tau" => "fengping.tao@upai.com" }
-  # Or just: s.author    = "Nicholas Tau"
-  # s.authors            = { "Nicholas Tau" => "fengping.tao@upai.com" }
-  # s.social_media_url   = "http://twitter.com/Nicholas Tau"
+  s.author             = { "mingweizhang" => "mingweiz@foxmail.com" }
+  # Or just: s.author    = "mingweizhang"
+  # s.authors            = { "mingweizhang" => "mingweiz@foxmail.com" }
+  # s.social_media_url   = "http://twitter.com/mingweizhang"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,8 +65,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios
+   s.platform     = :ios, "6.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/JSPatchSDKPod.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/mingweizhang/JSPatchSDKPod.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
   s.vendored_frameworks = "JSPatch.framework"
   # s.public_header_files = "Classes/**/*.h"
 
