@@ -19,7 +19,14 @@ Pod::Spec.new do |s|
   s.version      = "0.1.5"
   s.summary      = "JSPatch SDK Pod."
 
-  s.description  =  "JSPatch SDK Pod"
+  s.description  = <<-DESC
+                   A longer description of JSPatchSDKPod in Markdown format.
+
+                   * Think: Why did you write this? What is the focus? What does it do?
+                   * CocoaPods will be using this to generate tags, and improve search results.
+                   * Try to keep it short, snappy and to the point.
+                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   DESC
 
   s.homepage     = "https://github.com/demonnico/JSPatchSDKPod"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -33,6 +40,7 @@ Pod::Spec.new do |s|
   #
 
   #s.license      = "MIT "
+  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.license      = { :type => "MIT", :text => "" }
 
 
@@ -46,10 +54,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Nicholas Tau" => "fengping.tao@upai.com" }
-  # Or just: s.author    = "Nicholas Tau"
-  # s.authors            = { "Nicholas Tau" => "fengping.tao@upai.com" }
-  # s.social_media_url   = "http://twitter.com/Nicholas Tau"
+  s.author             = { "mingweizhang" => "mingweiz@foxmail.com" }
+  # Or just: s.author    = "mingweizhang"
+  # s.authors            = { "mingweizhang" => "mingweiz@foxmail.com" }
+  # s.social_media_url   = "http://twitter.com/mingweizhang"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -71,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mingweizhang/JSPatchSDKPod", :tag => s_version.to_s }
+  s.source       = { :git => "https://github.com/mingweizhang/JSPatchSDKPod.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
