@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface JSPatch : NSObject
-+ (void)startWithAppKey:(NSString *)aAppKey;
++ (void)startWithAppKey:(NSString *)aAppKey runAfterFetch:(BOOL)runAfterFetch;
 + (void)testScriptInBundle;
 @end
